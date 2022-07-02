@@ -1,16 +1,20 @@
-# db_schema
+## Sharing code
 
-Contains the shared models and the utility function to create a db connection so that the Lambda functions 
-can use the models and session to run queries.
+Put your shared functions inside the __commons__ folder and import file like:
 
-## Install dependencies
-First create the folders for your libraries:
-
-```bash
-mkdir -p python/lib/python3.9/site-packages           
+```python
+from commons import utils.py
 ```
 
-Run this command from the root folder of the project:
+or a function
+
+```python
+from commons.utils import util_fnc
+```
+
+## Install dependencies
+
+Add your dependencies to requirements.txt and run this command from the root folder of the project:
 
 ```bash
 pip install -r requirements.txt -t python/lib/python3.9/site-packages
