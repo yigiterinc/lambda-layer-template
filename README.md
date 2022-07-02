@@ -20,7 +20,7 @@ Add your dependencies to requirements.txt and run this command from the root fol
 pip install -r requirements.txt -t python/lib/python3.9/site-packages
 ```
 
-## Deploy the sample application
+## Deploying the Layer
 
 The Serverless Application Model Command Line Interface (SAM CLI) is an extension of the AWS CLI that adds functionality for building and testing Lambda applications. It uses Docker to run your functions in an Amazon Linux environment that matches Lambda. It can also emulate your application's build environment and API.
 
@@ -35,16 +35,6 @@ To build and deploy your application for the first time, run the following in yo
 ```bash
 sam deploy --guided
 ```
-
-## Use the SAM CLI to build and test locally
-
-Build your application with the `sam build --use-container` command.
-
-The SAM CLI installs dependencies defined in `db_layer/requirements.txt`, creates a deployment package, and saves it in the `.aws-sam/build` folder.
-
-Test a single function by invoking it directly with a test event. An event is a JSON document that represents the input that the function receives from the event source. Test events are included in the `events` folder in this project.
-
-Run functions locally and invoke them with the `sam local invoke` command.
 
 ## Resources
 
