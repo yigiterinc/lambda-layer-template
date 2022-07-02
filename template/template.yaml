@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Common data and libraries
+
+Resources:
+  SharedLayer:  # <-- name of resource
+      Type: AWS::Serverless::LayerVersion
+      Properties:
+          LayerName: commons-layer # <-- name of your layer
+          Description: Shared data and libraries
+          ContentUri: src/
+          CompatibleRuntimes:
+            - python3.9 # <-- update as desired
+          RetentionPolicy: Retain
+
+Outputs:
+  SharedLayer:
+    Description: Shared data and libraries
+    Value: !Ref CommonsLayer
+    Export:
+      Name: !Sub '${AWS::StackName}-CommonsLayer'
