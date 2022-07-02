@@ -12,7 +12,7 @@ or a function
 from commons.utils import util_fnc
 ```
 
-## Install dependencies
+## Installing dependencies (pip packages)
 
 Add your dependencies to requirements.txt and run this command from the root folder of the project:
 
