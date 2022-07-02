@@ -1,4 +1,4 @@
-## Sharing code
+## Sharing Code
 
 Put your shared functions inside the __commons__ folder and import file like:
 
@@ -12,7 +12,7 @@ or a function
 from commons.utils import util_fnc
 ```
 
-## Installing dependencies (pip packages)
+## Installing Dependencies (pip packages)
 
 Add your dependencies to requirements.txt and run this command from the root folder of the project:
 
