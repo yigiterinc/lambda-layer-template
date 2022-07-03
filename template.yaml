@@ -16,6 +16,6 @@ Resources:
 Outputs:
   SharedLayer:
     Description: Shared data and libraries
-    Value: !Ref CommonsLayer
+    Value: !Ref SharedLayer
     Export:
       Name: !Sub '${AWS::StackName}-CommonsLayer'
